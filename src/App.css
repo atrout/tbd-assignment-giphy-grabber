@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Sans-Serif;
+}
+
+.app {
+  text-align: center;
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: left;
+  font-size: 30px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  color: white;
+}
+
+p {
+  text-align: left;
+  color: gray;
+}
+
+.previous-searches {
+  font-size: 15px;
+}
+
+.giphy-logo {
+  background-image: url('../public/icon.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1.125em;
+  height: 1.125em;
+  margin-right: 10px;
+  display: inline-flex;
+  align-self: center;
+}
+
+.emphasis {
+  font-weight: bold;
+}

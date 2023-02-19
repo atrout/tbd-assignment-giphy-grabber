@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="186.66667"
+   height="240"
+   viewBox="0 0 186.66667 240"
+   sodipodi:docname="GIPHY Icon Trans.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="ink_ext_XXXXXX"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,240)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 0,1730 V 130 H 200 V 1730 H 0"
+         style="fill:#00ff99;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path12" />
+      <path
+         d="M 1200,1330 V 130 h 200 v 1200 h -200"
+         style="fill:#9933ff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path14" />
+      <path
+         d="M 675,1800 H 0 v -200 h 870 v 200 H 675"
+         style="fill:#fff35c;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path16" />
+      <path
+         d="M 900,1600 H 600 870 v 60 l 30,-60"
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path18" />
+      <path
+         d="M 870,1600 H 600 l 200,200 70,-140 v -60"
+         style="fill:#999237;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path20" />
+      <path
+         d="m 1200,1000 v 300 l 200,-100 -200,-200"
+         style="fill:#5c1f99;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path22" />
+      <path
+         d="M 1200,200 H 0 V 0 h 1400 v 200 h -200"
+         style="fill:#00ccff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path24" />
+      <path
+         d="m 1200,1400 v 200 h -200 v 200 H 800 v -163.33 -200 V 1200 h 200 200 200 v 200 h -200"
+         style="fill:#ff6666;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path26" />
+    </g>
+  </g>
+</svg>
