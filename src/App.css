@@ -17,7 +17,7 @@ h1 {
   font-size: 30px;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
-  color: white;
+  color: lightgray;
 }
 
 p, ul{
@@ -28,16 +28,35 @@ p, ul{
 ul {
   display: inline-block;
   list-style-type: none;
+  padding: 0;
 }
 
-a {
-  color: rgb(18, 174, 231);
+li {
+  display: inline;
+  margin-left: 1em;
 }
 
 .previous-searches {
   font-size: 12px;
   display: flex;
   align-items: center;
+}
+
+button.link {
+  color: rgb(18, 174, 231);
+	text-align: left;
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+button.link {
+	text-decoration: underline;
+}
+button.link:hover {
+	color: white;
 }
 
 .giphy-logo {
