@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './App.css';
 import {
   Grid, // our UI Component to display the results
@@ -12,24 +12,6 @@ import ShowingResults from './ShowingResults';
 const WEB_SDK_KEY = process.env.REACT_APP_WEB_SDK_KEY;
 
 const App = () => {
-
-  /* TODO:
-    x center display
-    x put SDK key in env variable
-    - current search terms
-    - list of previous searches
-    - search bar
-      x giphy logo
-      x font
-      - font color / size?
-    - viewport layout
-    - good default large width?
-      x 1040?
-    - readme
-    - put code in the right files
-    - aria tags
-    - tests
-  */
   const SearchExperience = () => (
     <SearchContextManager 
       apiKey={WEB_SDK_KEY}
@@ -40,22 +22,33 @@ const App = () => {
     </SearchContextManager>
   )
 
-  const Components =() => {
-    const {fetchGifs, searchKey} = useContext(SearchContext);
+  // do some math here and also useEffect to update when window is resized
+  // const windowWidth = window.innerWidth;
+  // const breakpoint = 1040;
+  // const width = windowWidth < breakpoint ? windowWidth - 100 : breakpoint
+
+  const Components = () => {
+    const {fetchGifs, searchKey, setSearch} = useContext(SearchContext);
+
+    const [ previousSearches, setPreviousSearches ] = useState([]);
+    const [ previousSearchKey, setPreviousSearchKey ] = useState('init');
+    useEffect(()=> {
+        if (previousSearchKey !== searchKey) {
+          // TODO: do something fancier here? if term is already in list, remove it from current location and stick it on the end?
+          // limit number of previous searches being retained?
+          setPreviousSearches([...previousSearches, searchKey||'trending']);
+          setPreviousSearchKey(searchKey);
+        }
+    }, [searchKey, previousSearches, setPreviousSearches, previousSearchKey, setPreviousSearchKey]);
+
     return (
       <>
         <SearchBar 
           placeholder='Search...'/>
 
-        <PreviousSearches/>
-        <ShowingResults/>
-        {/** 
-            key will recreate the component, 
-            this is important for when you change fetchGifs 
-            e.g. changing from search term dogs to cats or type gifs to stickers
-            you want to restart the gifs from the beginning and changing a component's key does that 
-        **/}
-        <Grid key={searchKey} columns={4} width={1040} fetchGifs={fetchGifs} />
+        <PreviousSearches previousSearches={previousSearches} setSearch={setSearch}/>
+        <ShowingResults searchKey={searchKey||'trending'}/>
+        <Grid key={searchKey} columns={4} width={1366} fetchGifs={fetchGifs} />
       </>
     )
   }

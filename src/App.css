@@ -1,15 +1,12 @@
 body {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 100vh;
   font-family: Sans-Serif;
 }
 
 .app {
   text-align: center;
-  width: 1040px;
+  max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -23,13 +20,24 @@ h1 {
   color: white;
 }
 
-p {
+p, ul{
   text-align: left;
   color: gray;
 }
 
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+a {
+  color: rgb(18, 174, 231);
+}
+
 .previous-searches {
-  font-size: 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .giphy-logo {
