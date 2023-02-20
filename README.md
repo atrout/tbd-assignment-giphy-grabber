@@ -17,7 +17,8 @@ You may also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run all the tests outside of watch mode, use the command:
+```yarn test a --watchAll=false```
 
 ### `yarn run build`
 
