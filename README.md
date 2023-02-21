@@ -4,7 +4,15 @@ This is a small React app that uses the [Giphy React SDK](https://developers.gip
 
 ## Running locally
 
-After cloning the repo locally, in the project directory you can run:
+A Giphy API key is required. After creating an account on the [Giphy developer site](https://developers.giphy.com/), you can create an app from the dashboard, which will generate an API key.
+
+Clone this repo locally, then create a configuration file called `.env` in the root of the project directory and include your API key:
+
+```
+REACT_APP_WEB_SDK_KEY='<your_api_key>'
+```
+
+In the project directory you can run:
 
 ### `yarn start`
 
