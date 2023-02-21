@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import GiphyGrabber from './GiphyGrabber';
+import App from './App';
 
-test('renders learn react link', () => {
-  render(<GiphyGrabber />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders Giphy Grabber header', () => {
+  render(<App />);
+  const headerElement = screen.getByText(/GIPHY GRABBER/i);
+  expect(headerElement).toBeInTheDocument();
 });

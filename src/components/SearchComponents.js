@@ -5,7 +5,7 @@ import {
   SearchContext, // the context that wraps and connects our components
 } from '@giphy/react-components';
 import PreviousSearches from './PreviousSearches';
-import ShowingResults from './ShowingResults';
+import CurrentSearchTerm from './CurrentSearchTerm';
 
 const MAX_WIDTH = 1920;
 const MAX_COLUMNS = 4;
@@ -64,7 +64,7 @@ const SearchComponents = () => {
         placeholder='Search...'/>
 
       <PreviousSearches previousSearches={previousSearches} setSearch={setSearch}/>
-      <ShowingResults searchKey={searchKey||'trending'}/>
+      <CurrentSearchTerm searchKey={searchKey||'trending'}/>
       <Grid key={searchKey} columns={columns} width={gridWidth} fetchGifs={fetchGifs} />
     </>
   )

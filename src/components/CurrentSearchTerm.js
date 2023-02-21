@@ -1,4 +1,4 @@
-const ShowingResults = ({searchKey}) => {
+const CurrentSearchTerm = ({searchKey}) => {
   return (
     <>
       <p>Showing results for: <span className='emphasis'>{searchKey}</span></p>
@@ -6,4 +6,4 @@ const ShowingResults = ({searchKey}) => {
   );
 }
 
-export default ShowingResults;
+export default CurrentSearchTerm;
