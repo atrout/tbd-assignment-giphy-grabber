@@ -26,3 +26,9 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.
+
+You can run this build locally using serverless:
+```
+yarn global add serve
+serve -s build
+```
